@@ -15,11 +15,11 @@ return new class extends Migration
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description')->unique();
+            $table->text('description');
             $table->string('image');
             $table->string('video');
             $table->timestamps();
-            $table-->softDelete();
+            $table->softDeletes();
         });
     }
 

@@ -8,17 +8,10 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\database\softDeletes;
 
-class Movie extends Model
+class category extends Model
 {
     use HasFactory, Model, HasApiTokens, Notifiable, softDeletes;
     protected $fillable = [
-        'title',
-        'description',
-        'image',
-        'image',
-        'video'
+        'category_id'
     ];
-
-
 };
-
